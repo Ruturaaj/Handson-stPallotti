@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #container{
+            width: 600px;
+            border: 2px solid rgb(0, 0, 0);
+           
+        }
+        #inner:hover{
+            
+            width: 600px;
+            background-color: red;
+            transition:width background-color;
+            transition-duration: 10s;
+            transition-delay: 3s;
+        }
+        
+        #inner{
+            width: 10px;
+            background-color: brown;
+            height: 50px;
+            
+        }
+    </style>
+    <p> Transitions in CSS</p>
+    <div id="container">
+        <div id="inner">
+
+        </div>
+    </div>
+    
+</body>
+</html>

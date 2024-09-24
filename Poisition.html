@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Demo</title>
+</head>
+<body>
+    <style>
+        #main{
+            width: 100%;
+            height: auto;
+            background-color: beige;
+            padding: 20px;
+        }
+
+        #box1 , #box2 , #box3 , #box4 , #box5 {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 10px;
+        }
+        #box1{
+            background-color: red;
+            position: static;/*static doesn't change */
+        }
+        #box2{
+            background-color: rgb(239, 144, 219);
+            position: relative;/*relative is depend on particular element*/
+            left: 100px;
+            top: 100px;
+            bottom: 100px;
+        }
+        #box3{
+            background-color: wheat;
+            position: absolute;/*relative but body tag => absolute*/
+            top: 10px;
+            left: 390px;
+        }
+        #box4{
+            background-color: rgb(178, 194, 243);
+            position: fixed;/* */
+            top: 20px;
+            left: 200px;
+        }
+
+        #box5{
+            background-color: rgb(14, 13, 13);
+            color: aliceblue;
+            position: sticky;
+            top: 10px;
+            left: 150px;
+        }
+    </style>
+    <div id="main">
+        <div id="box1"> Box 1 (static 1)</div>
+        <div id="box1"> Box 1 (static 2)</div>
+        <div id="box1"> Box 1 (static 3)</div>
+        <div id="box2"> Box 2 (Relative)</div>
+        <div id="box3"> Box 3 (absolute)</div>
+        <div id="box4"> Box 4 (Fixed) </div>
+        <div id="box5"> Box 5 (sticky) </div>
+    </div>
+</body>
+</html>

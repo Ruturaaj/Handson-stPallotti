@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p item-type="electronic" cost="high"> SmartPhone</p>
+   <p item-type="electronic" cost="low"> SmartWatch </p>
+   <p item-type="homeapply" cost="low"> InductionCooker</p>
+   <p item-type="homeapply"  cost="low"> Mixer</p> 
+   <p item-type="electronic" cost="high"> Laptop </p>
+   <p item-type="homeapply" cost="low"> Washing machine </p>
+   <p><a href="Poisition.html" target="blank">Click Here</a></p>
+  
+
+<style>
+    p[item-type="electronic"]{
+    color:blue;
+}
+ p[item-type="homeapply"]{
+    color: rgb(255, 0, 34);
+ }    
+ p[cost="high"]{
+    border: 2px dashed black;
+    
+ }
+ p[cost="low"]{
+    border: 2px solid rgb(43, 226, 67);
+    
+ }
+ p{
+    text-align: center;
+ }
+ p:hover{
+    background-color: brown;
+    border-radius: 15px;
+ }
+ a:hover{
+    color: red;
+ }
+ a:active{
+     color: green;
+ }
+</style>
+</body>
+</html>
